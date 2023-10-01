@@ -1,0 +1,9 @@
+<div class="login-wrapper" fxLayout="column" style="margin-top: 4rem">
+  <form class="example-form" (ngSubmit)="search()" [formGroup]="searchForm">
+    <mat-card-content>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Search..." formControlName="search" />
+      </mat-form-field>
+    </mat-card-content>
+  </form>
+</div>

@@ -1,0 +1,44 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Add A film</mat-card-title>
+    </mat-card-header>
+    <form class="example-form" (ngSubmit)="submitForm()" [formGroup]="addForm">
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name" formControlName="name" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="Description"
+            formControlName="description"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Release Date" formControlName="rdate" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Country...</mat-label>
+          <mat-select formControlName="country">
+            <mat-option [value]="Countries" *ngFor="let country of Countries"
+              >{{ country }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Genre...</mat-label>
+          <mat-select formControlName="genre">
+            <mat-option [value]="Genres" *ngFor="let genre of Genres"
+              >{{ genre }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Ticket Price" formControlName="tprice" />
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-stroked-button color="primary" class="btn-block">Add</button>
+    </form>
+  </mat-card>
+</div>

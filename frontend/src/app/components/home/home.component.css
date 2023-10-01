@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  margin-top: 4rem;
+  /* padding: 10px; */
+}
+.side-nav {
+  width: 250px;
+  min-width: 230px;
+  min-height: calc(100vh - 4rem);
+  background-color: rgb(37, 37, 37);
+}

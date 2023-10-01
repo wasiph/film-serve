@@ -1,0 +1,19 @@
+.nav-items {
+  display: block;
+}
+.nav-item {
+  display: flex;
+  height: 40px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #c8c8c8;
+  text-align: center;
+  margin: 5px;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item:hover {
+  background-color: rgb(56, 56, 56);
+}
